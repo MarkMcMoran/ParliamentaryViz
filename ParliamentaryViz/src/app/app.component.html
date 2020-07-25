@@ -1,93 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>{{ title }}</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<div class="wrapper">
-  <body>
-  <mat-card id="heading-title" style="text-align:center;">
-    <mat-card-title>{{ title }} </mat-card-title>
-    <mat-card-subtitle>
-      <h6>Dashboard visualising the data from <a href="https://petition.parliament.uk/">UK Government
-        Petitions</a>.</h6>
-    </mat-card-subtitle>
-  </mat-card>
-
-  <mat-grid-list cols="6">
-    <mat-grid-tile colspan="2">
-      <mat-card>
-        <mat-card-title>
-          <h5>Total Signatures</h5>
-        </mat-card-title>
-        <mat-card-content>
-            <mat-card-subtitle>
-              Signatures broken down by Country, Constituency, UK Region
-            </mat-card-subtitle>
-            <mat-list>
-              <mat-list-item>
-                Location a
-              </mat-list-item>
-              <mat-list-item>
-                Location b
-              </mat-list-item>
-              <mat-list-item>
-                Location c
-              </mat-list-item>
-              <mat-list-item>
-                Location d
-              </mat-list-item>
-              <mat-list-item>
-                Location e
-              </mat-list-item>
-            </mat-list>
-        </mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-    <!-- Map to go here... -->
-    <mat-grid-tile colspan="2" >
-      <mat-card>
-        <p>
-          Breakdown of individual votes:
-        </p>
-
-        <mat-card-content>
-          <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                  src="https://www.openstreetmap.org/export/embed.html?bbox=-108.72070312500001%2C4.302591077119676%2C63.54492187500001%2C74.5198888114851&amp;layer=mapnik"
-                  style="border: 1px solid black"></iframe><br/>
-          <small><a href="https://www.openstreetmap.org/#map=4/50.90/-22.59">View Larger Map</a></small>
-        </mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-
-<!-- Controls -->
-    <mat-grid-tile colspan="2">
-      <mat-card>
-        <mat-card-title>Controls</mat-card-title>
+  <head>
+    <title>{{ title }}</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <div class="wrapper">
+    <body>
+      <mat-card id="heading-title" style="text-align: center;">
+        <mat-card-title>{{ title }} </mat-card-title>
         <mat-card-subtitle>
-          Please use the following sliders and buttons to modify the output shown by the Map.
+          <h6>
+            Dashboard visualising the data from
+            <a href="https://petition.parliament.uk/">UK Government Petitions</a
+            >.
+          </h6>
         </mat-card-subtitle>
-        <div class="example-button-row">
-          <mat-list>
-            <mat-list-item>
-          <button mat-flat-button color="primary">Change x value</button>
-            </mat-list-item>
-            <mat-list-item>
-          <button mat-flat-button color="primary">Change y value</button>
-            </mat-list-item>
-            <mat-list-item>
-          <button mat-flat-button color="primary">Change z value</button>
-            </mat-list-item>
-          </mat-list>
-        </div>
-        <mat-slide-toggle>
-          Show UK only.
-        </mat-slide-toggle>
       </mat-card>
-    </mat-grid-tile>
-  </mat-grid-list>
 
-  </body>
-</div>
+      <mat-grid-list cols="6">
+        <mat-grid-tile colspan="2">
+          <mat-card>
+            <mat-card-title>
+              <h5>Total Signatures</h5>
+            </mat-card-title>
+            <mat-card-content>
+              <mat-card-subtitle>
+                Signatures broken down by Country, Constituency, UK Region
+              </mat-card-subtitle>
+              <mat-list>
+                <mat-list-item>
+                  Location a
+                </mat-list-item>
+                <mat-list-item>
+                  Location b
+                </mat-list-item>
+                <mat-list-item>
+                  Location c
+                </mat-list-item>
+                <mat-list-item>
+                  Location d
+                </mat-list-item>
+                <mat-list-item>
+                  Location e
+                </mat-list-item>
+              </mat-list>
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+        <!-- Map to go here... -->
+        <mat-grid-tile colspan="2">
+          <mat-card>
+            <p>
+              Breakdown of individual votes:
+            </p>
+
+            <mat-card-content>
+              <iframe
+                width="425"
+                height="350"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-108.72070312500001%2C4.302591077119676%2C63.54492187500001%2C74.5198888114851&amp;layer=mapnik"
+                style="border: 1px solid black;"
+              ></iframe
+              ><br />
+              <small
+                ><a href="https://www.openstreetmap.org/#map=4/50.90/-22.59"
+                  >View Larger Map</a
+                ></small
+              >
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+
+        <!-- Controls -->
+        <mat-grid-tile colspan="2">
+          <mat-card>
+            <mat-card-title>Controls</mat-card-title>
+            <mat-card-subtitle>
+              Please use the following sliders and buttons to modify the output
+              shown by the Map.
+            </mat-card-subtitle>
+            <div class="example-button-row">
+              <mat-list>
+                <mat-list-item>
+                  <button mat-flat-button color="primary">
+                    Change x value
+                  </button>
+                </mat-list-item>
+                <mat-list-item>
+                  <button mat-flat-button color="primary">
+                    Change y value
+                  </button>
+                </mat-list-item>
+                <mat-list-item>
+                  <button mat-flat-button color="primary">
+                    Change z value
+                  </button>
+                </mat-list-item>
+              </mat-list>
+            </div>
+            <mat-slide-toggle>
+              Show UK only.
+            </mat-slide-toggle>
+          </mat-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </body>
+  </div>
 </html>
