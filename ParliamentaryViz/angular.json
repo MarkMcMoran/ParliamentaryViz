@@ -130,5 +130,8 @@
       }
     }
   },
-  "defaultProject": "ParliamentaryViz"
+  "defaultProject": "ParliamentaryViz",
+  "cli": {
+    "analytics": false
+  }
 }
